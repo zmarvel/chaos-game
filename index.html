@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="chaos.js"></script>
+    </head>
+
+    <body onload="var app = new App(); app.setup()">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <br>
+        <input type="button" id="polygonButton" value="set polygon">
+        <input type="button" id="resetButton" value="reset"> <br>
+        <input type="text" id="nextText" placeholder="how many steps?">
+        <input type="button" id="nextButton" value="step"> <br>
+        <input type="text" id="ratioText" placeholder="ratio">
+        <hr>
+        <strong>HOWTO:</strong> Click around the canvas to define corners of
+        a polygon. Click the "set polygon" button. Click the canvas once more
+        to place a starting point. Each additional click of the canvas (or
+        click of the "step" button) will advance the Chaos Game by the number
+        of steps in the field, based on the ratio in the second field. Try 0.5
+        with a triangle, or 0.25 with a rectangle!
+    </body>
+</html>
